@@ -37,7 +37,7 @@ struct Orders: View {
                 .shadow(radius: 1)
             }
             .navigationTitle("Orders")
-            .navigationBarTitleDisplayMode(.inline)
+//            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

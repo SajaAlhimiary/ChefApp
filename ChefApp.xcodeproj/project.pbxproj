@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A518C4CF2941C9A700B2A9BB /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518C4CE2941C9A700B2A9BB /* Orders.swift */; };
+		A5467914294EF59300883CE6 /* ChefList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5467913294EF59300883CE6 /* ChefList.swift */; };
 		A557759F294095AD001D9AE0 /* ChefAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557759E294095AD001D9AE0 /* ChefAppApp.swift */; };
 		A55775A1294095AD001D9AE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55775A0294095AD001D9AE0 /* ContentView.swift */; };
 		A55775A3294095AE001D9AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55775A2294095AE001D9AE0 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		A518C4CE2941C9A700B2A9BB /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		A5467913294EF59300883CE6 /* ChefList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefList.swift; sourceTree = "<group>"; };
 		A557759B294095AD001D9AE0 /* ChefApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A557759E294095AD001D9AE0 /* ChefAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefAppApp.swift; sourceTree = "<group>"; };
 		A55775A0294095AD001D9AE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		A557759D294095AD001D9AE0 /* ChefApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5467913294EF59300883CE6 /* ChefList.swift */,
 				A557759E294095AD001D9AE0 /* ChefAppApp.swift */,
 				A55775A0294095AD001D9AE0 /* ContentView.swift */,
 				A518C4CE2941C9A700B2A9BB /* Orders.swift */,
@@ -100,7 +103,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					A557759A294095AD001D9AE0 = {
 						CreatedOnToolsVersion = 14.1;
@@ -145,6 +148,7 @@
 				A518C4CF2941C9A700B2A9BB /* Orders.swift in Sources */,
 				A55775A1294095AD001D9AE0 /* ContentView.swift in Sources */,
 				A557759F294095AD001D9AE0 /* ChefAppApp.swift in Sources */,
+				A5467914294EF59300883CE6 /* ChefList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +188,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -242,6 +247,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -266,8 +272,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChefApp/ChefApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ChefApp/Preview Content\"";
 				DEVELOPMENT_TEAM = W2Z6D3A7F8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -304,8 +314,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChefApp/ChefApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ChefApp/Preview Content\"";
 				DEVELOPMENT_TEAM = W2Z6D3A7F8;
 				ENABLE_HARDENED_RUNTIME = YES;
