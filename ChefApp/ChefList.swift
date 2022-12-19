@@ -38,14 +38,26 @@ struct ChefList: View {
                                     Text(item)
                                 }
                             }
-//                            VStack {
-//                                ForEach(cuisines) { item in
+                            HStack {
+                                Text("Cuisines: ")
+                                ForEach(chef.cuisine, id: \.self) { cuisineName in
+                                    Text(cuisineName)
+                                }
+                                
+                                
+//                                ForEach(cuisines, id: \.self) { item in
 //                                    Text(item.capitalized)
 //                                        .padding()
 //                                }
-//                            }
-//                            Text("Ready or not, here I come!")
-//                        }
+                                
+//                                ForEach(chefList) { list in
+//                                    ForEach(list.cuisine, id: \.self) { cuisineName in
+//                                        Text(cuisineName)
+//                                    }
+//
+//                                }
+                            }
+                        }
                     }
                     .padding(6)
                 }
@@ -57,37 +69,43 @@ struct ChefList: View {
         }
         .navigationTitle("Chef")
     }
-}
-
-//View Model
-func fetchChef(){
     
-    let container = CKContainer(identifier: "iCloud.Chef")
-    let predicate = NSPredicate(value: true)
-    let query = CKQuery(recordType: "Chef", predicate: predicate)
     
-    let operations = CKQueryOperation(query: query)
-    operations.recordMatchedBlock = {  recordId, result in
+    //View Model
+    func fetchChef(){
         
-        switch result {
-        case .success( let records):
-            print(records)
-            let chef = Chef(record: records)
-            let cousine = records.value(forKey: "cuisine")
-            self.cuisines = cousine as! [String]
-            print(self.cuisines)
+        let container = CKContainer(identifier: "iCloud.Chef")
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: "Chef", predicate: predicate)
+        
+        let operations = CKQueryOperation(query: query)
+        operations.recordMatchedBlock = {  recordId, result in
             
-            self.chefList.append(chef)
-        case .failure( let error):
-            print(error.localizedDescription)
+            switch result {
+            case .success( let records):
+                print(records)
+                let chef = Chef(record: records)
+             //   let cousine = records.value(forKey: "cuisine") as! [String]
+                //   self.cuisines = cousine as! [String]
+                //   print(self.cuisines)
+//                for i in cousine
+//                {
+//                    cuisines.append(i)
+//                    // print("\\\\ the cousine is \(i)")
+//                }
+                
+                self.chefList.append(chef)
+            case .failure( let error):
+                print(error.localizedDescription)
+            }
+            
         }
         
+        container.publicCloudDatabase.add(operations)
     }
     
-    container.publicCloudDatabase.add(operations)
+    
 }
-}
-
 struct ChefList_Previews: PreviewProvider {
     static var previews: some View {
         ChefList()
