@@ -11,7 +11,7 @@ import SwiftUI
 struct ChefAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ChefList()
+            SignIn()
         }
     }
 }
