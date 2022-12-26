@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		449419D2295837BD00B2EAEB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449419D1295837BD00B2EAEB /* OnBoardingView.swift */; };
 		A5467914294EF59300883CE6 /* ChefList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5467913294EF59300883CE6 /* ChefList.swift */; };
 		A557759F294095AD001D9AE0 /* ChefAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557759E294095AD001D9AE0 /* ChefAppApp.swift */; };
 		A55775A1294095AD001D9AE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55775A0294095AD001D9AE0 /* ContentView.swift */; };
@@ -40,13 +41,13 @@
 		A591D53A29532299005CCBB5 /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591D53929532299005CCBB5 /* Test2.swift */; };
 		A591D540295327B5005CCBB5 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591D53F295327B5005CCBB5 /* SignIn.swift */; };
 		A591D54229532862005CCBB5 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591D54129532861005CCBB5 /* LogIn.swift */; };
-		A591D5462953292C005CCBB5 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591D5452953292C005CCBB5 /* OnBoardingView.swift */; };
 		A591D54829532F0D005CCBB5 /* OnBoarding .swift in Sources */ = {isa = PBXBuildFile; fileRef = A591D54729532F0D005CCBB5 /* OnBoarding .swift */; };
 		A591D54A29533135005CCBB5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591D54929533135005CCBB5 /* Profile.swift */; };
 		A591D54C2953316C005CCBB5 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591D54B2953316C005CCBB5 /* Checkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		449419D1295837BD00B2EAEB /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		A5467913294EF59300883CE6 /* ChefList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefList.swift; sourceTree = "<group>"; };
 		A557759B294095AD001D9AE0 /* ChefApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A557759E294095AD001D9AE0 /* ChefAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefAppApp.swift; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		A591D53929532299005CCBB5 /* Test2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
 		A591D53F295327B5005CCBB5 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		A591D54129532861005CCBB5 /* LogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
-		A591D5452953292C005CCBB5 /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoardingView.swift; path = ../../../../Downloads/OnBoardingView.swift; sourceTree = "<group>"; };
 		A591D54729532F0D005CCBB5 /* OnBoarding .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OnBoarding .swift"; sourceTree = "<group>"; };
 		A591D54929533135005CCBB5 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A591D54B2953316C005CCBB5 /* Checkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
@@ -138,9 +138,9 @@
 				A591D53F295327B5005CCBB5 /* SignIn.swift */,
 				A591D51729530A55005CCBB5 /* ChatPage.swift */,
 				A591D51929530A5B005CCBB5 /* ChatMain.swift */,
-				A591D5452953292C005CCBB5 /* OnBoardingView.swift */,
 				A591D5312953155B005CCBB5 /* Mnue.swift */,
 				A591D54129532861005CCBB5 /* LogIn.swift */,
+				449419D1295837BD00B2EAEB /* OnBoardingView.swift */,
 				A591D51B29530A61005CCBB5 /* Bar.swift */,
 				A591D51D29530B47005CCBB5 /* Header.swift */,
 				A591D533295315B7005CCBB5 /* Model.swift */,
@@ -254,7 +254,6 @@
 				A591D51829530A55005CCBB5 /* ChatPage.swift in Sources */,
 				A55775A1294095AD001D9AE0 /* ContentView.swift in Sources */,
 				A591D5102953037E005CCBB5 /* Order.swift in Sources */,
-				A591D5462953292C005CCBB5 /* OnBoardingView.swift in Sources */,
 				A572CFEB29506CBE002EB2ED /* ChefModel.swift in Sources */,
 				A591D54829532F0D005CCBB5 /* OnBoarding .swift in Sources */,
 				A591D53629531B3D005CCBB5 /* Splash.swift in Sources */,
@@ -264,6 +263,7 @@
 				A557759F294095AD001D9AE0 /* ChefAppApp.swift in Sources */,
 				A591D54C2953316C005CCBB5 /* Checkout.swift in Sources */,
 				A591D51629530A4F005CCBB5 /* BotRespones.swift in Sources */,
+				449419D2295837BD00B2EAEB /* OnBoardingView.swift in Sources */,
 				A591D52E29530D39005CCBB5 /* rating.swift in Sources */,
 				A591D51E29530B47005CCBB5 /* Header.swift in Sources */,
 				A591D50929530160005CCBB5 /* MapModel.swift in Sources */,
@@ -405,7 +405,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ChefApp/Preview Content\"";
-				DEVELOPMENT_TEAM = W2Z6D3A7F8;
+				DEVELOPMENT_TEAM = X5NV3GTA2R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -449,7 +449,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ChefApp/Preview Content\"";
-				DEVELOPMENT_TEAM = W2Z6D3A7F8;
+				DEVELOPMENT_TEAM = X5NV3GTA2R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
